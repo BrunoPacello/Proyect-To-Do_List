@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+header {
+  margin: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  font-family: ubuntu;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-family: ubuntu;
+}
+
+body {
+  background-color: #001459;
+  color: #419a1d;
+}
+
+.All {
+  margin: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  display: flex;
+  gap: 100px;
+}
+
+.NewTask {
+  margin: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  padding: 10px;
+  flex: 1;
+}
+
+.Tasks {
+  margin: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.All input {
+  padding: 10px;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.TitleAndTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  flex-direction: column;
+}
