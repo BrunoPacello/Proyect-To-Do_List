@@ -2,39 +2,52 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-family: ubuntu;
 }
 
 header {
   margin: 25px;
-  border: 2px solid #ffffff;
+  border: 3 px solid #ffffff;
   border-radius: 15px;
-  font-family: ubuntu;
 }
 
 h1 {
   display: flex;
   justify-content: center;
   margin: 10px;
+  font-size: 45px;
 }
 
 h2 {
   display: flex;
   justify-content: center;
   margin: 10px;
-  font-family: ubuntu;
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+}
+
+.task-content {
+  color: rgb(192, 192, 192);
+  margin-top: 15px;
+  font-size: 18px;
 }
 
 body {
-  background-color: #001459;
-  color: #419a1d;
+  background: radial-gradient(#222222, #000000);
+  color: #ffffff;
 }
 
 .All {
   margin: 25px;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 15px;
   display: flex;
-  gap: 100px;
+  gap: 80px;
 }
 
 .NewTask {
@@ -43,20 +56,51 @@ body {
   border-radius: 15px;
   padding: 10px;
   flex: 1;
+  height: 600px;
+  max-height: 600px;
 }
 
 .Tasks {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
   border: 2px solid #ffffff;
   border-radius: 15px;
   flex: 1;
+  height: 700px;
 }
 
-.All input {
-  padding: 10px;
+.NewTask input {
+  padding: 10px 15px 10px 15px;
   border: 2px solid rgb(75, 75, 75);
   border-radius: 15px;
-  margin-top: 10px;
+  margin-top: 50px;
+  width: 50%;
+  height: 20px;
+  font-size: 15px;
+}
+
+.NewTask textarea {
+  font-size: 20px;
+  margin-top: 1vh;
+  width: 80%;
+  height: 200px;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 15px;
+}
+
+.NewTask button {
+  margin-top: 75px;
+  border-radius: 5px;
+  padding: 17px 60px 17px 60px;
+  background: radial-gradient(#ff0000, 40%, #000000);
+  color: #ffffff;
+}
+
+.ButtonsNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .TitleAndTask {
@@ -65,4 +109,31 @@ body {
   justify-content: center;
   margin: 15px;
   flex-direction: column;
+  gap: 25px;
+}
+
+.task {
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  height: 300px;
+  margin: 15px;
+  padding: 30px;
+}
+
+img {
+  min-width: 50%;
+  max-width: 50%;
+  background-position: 50% 50%;
+}
+
+#container {
+  overflow-y: auto;
+}
+
+.deleteButton {
+  margin-top: 100px;
+  border-radius: 5px;
+  padding: 17px 60px 17px 60px;
+  background: radial-gradient(#ff0000, 40%, #000000);
+  color: #ffffff;
 }

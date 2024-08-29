@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header>
@@ -19,11 +20,16 @@
         <div class="NewTask">
           <h2>Agregar Tarea</h2>
           <div class="TitleAndTask">
-            <input type="text" placeholder="Titulo" />
-            <input type="text" />
+            <input type="text" placeholder="Titulo" id="titleInput" />
+            <textarea placeholder="Consigna" id="descriptionInput"></textarea>
+          </div>
+          <div class="ButtonsNew">
+            <button id="addTaskButton">Añadir Tarea</button>
           </div>
         </div>
-        <div class="Tasks"></div>
+        <div class="Tasks">
+          <ul id="container"></ul>
+        </div>
       </div>
     </main>
   </body>
